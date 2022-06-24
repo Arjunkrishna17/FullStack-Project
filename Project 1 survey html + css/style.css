@@ -1,0 +1,72 @@
+body{
+	font-family: 'lato', 'Lucida Sans Unicode' , 'Tahoma', 'sans-serif';
+
+}
+
+.main{
+	background: rgba(0, 0, 0, 0.7)url(https://d1rytvr7gmk1sx.cloudfront.net/wp-content/uploads/2021/02/programming-coding.jpg?x54417);
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+	background-size: cover;
+	color: #ffffff;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	font-size: 24px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	
+	}
+
+
+.main > h1, 
+.main > p {
+	text-align: center;
+	font-family: 35px;
+	position: relative;
+	width: 100%;
+	}
+
+.main-content{
+	
+	background-color: rgba(27, 27, 50, 0.9);
+	min-width: 300px;
+	max-width: 700px;
+	padding: 40PX;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	box-shadow: 0px -1px 10px 5px purple;
+	margin: auto;
+	position: relative;
+	top: 20px;
+    margin-bottom: 200px;
+
+}
+
+#name,#email,#role,#comment
+{
+	display: block;
+	width: 100%;
+	height: 35px;
+	pading: 5px 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+textarea{
+	width: 100%;
+}
+
+.button
+{
+	
+	height: 50px;
+	width: 100%;
+	background-color: green;
+}
+	
+	
