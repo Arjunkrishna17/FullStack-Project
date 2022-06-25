@@ -1,4 +1,4 @@
-const hour_element = document.getElementById("hours");
+const hour_element = document.getElementById("hours"); // get value from id
 const min_element = document.getElementById("minutes");
 const sec_element = document.getElementById("seconds");
 const ampm_element = document.getElementById("ampm");
@@ -10,9 +10,14 @@ function clock(){
 
 /*To update am and pm*/
 
-    if(h > 0){
+    if(h > 12){
         h -=12;
-        ampm = "PM";
+      let ampm = "PM";
+    }
+    else
+    {
+        ampm = "AM"
+
     }
 
     /*Now time is in single digit, so below code is to make it as two digit */
