@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: bisque;
+    font-family: sans-serif;
+   
+}
+.btn{
+    padding: 20px 40px;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+    text-decoration: none;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 0px 5px 2px rgb(0,0,0,0.5);
+    position:relative;
+    overflow:hidden;
+    
+}
+
+.btn span{
+    position: relative;
+    z-index: 1;
+
+
+}
+
+.btn::before{
+    content: "";
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,101,1) 50%, rgba(69,201,252,1) 100%); 
+    opacity: 0.7;
+    position:absolute;
+    width: 0;
+    height:0;
+    left: var(--x);/* (--*) is a custom property that contain a value that can be used in other declarations using the var() function.*/
+    top: var(--y);
+    transform: translate(-50%,-50%); /*Transform transalate
+    (x coordinate,ycoordinate)
+    property is used for move element
+    when element is in fixed or absolute position*/
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+  
+}
+
+.btn:hover::before{
+    width: 300px;
+    height: 250px;
+
+}

@@ -12,14 +12,12 @@ function clock(){
 
     if(h > 12){
         h -=12;
-      let ampm = "PM";
+       ampm = "PM";
     }
-    else
-    {
-        ampm = "AM"
-
+    else{
+        ampm = "AM";
     }
-
+    
     /*Now time is in single digit, so below code is to make it as two digit */
 
     h = h<10 ? "0" + h :h;
@@ -30,6 +28,7 @@ function clock(){
     min_element.innerText = m;
     sec_element.innerText = s;
     ampm_element.innerText = ampm;
+
     setTimeout( () => {
         clock();
 
