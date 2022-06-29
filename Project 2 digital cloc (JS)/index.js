@@ -12,7 +12,7 @@ function clock(){
 
     if(h > 12){
         h -=12;
-       ampm = "PM";
+       var ampm = "PM";
     }
     else{
         ampm = "AM";
