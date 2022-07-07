@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    height: 100vh;
+    background-color: black;
+    overflow:hidden;
+}
+span{
+    background: url("heart.png");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute; /*no space is created for the element*/
+    pointer-events: none;/* it will not target the element positioed at 
+    absolute*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); /*Make an absolute item 
+    center, Inside translate reffers (X,Y) coordinate*/
+    animation: animate 7s linear;
+
+}
+@keyframes animate {
+    0%{
+        transform: translate(-50%, -50%);/*transalte allows to move up down 
+        left right direction , -50 means it moves 50 left in x direc and 50 up in y direction*/
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -2000%);
+        filter: hue-rotate(1000deg);
+
+    
+    }
+
+}
